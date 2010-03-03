@@ -22,7 +22,7 @@ let typeset ws =
         decr j;
         len := !len + String.length wsa.(!j) + 1;
         let c = 
-          if i = !e then
+          if i = n then
             cost.(!j - !b)
           else
             let c1, c2 = cost.(!j - !b) in
